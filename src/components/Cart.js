@@ -75,7 +75,7 @@ function Cart({ cart, removeFromCart }) {
           </label>
           {/* Add more input fields for shipping info */}
           <button type="button" onClick={handlePlaceOrder}>Place Order</button>
-        </form>
+        </form><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </div>
     </div>
   );

@@ -9,11 +9,16 @@ function OrderConfirmation() {
   }
 
   return (
-    <div className="order-confirmation">
-      <h2>Order Placed Successfully</h2>
-      <p>Order ID: {orderDetails.orderId}</p>
-      <p>Total Amount: ${orderDetails.totalAmount}</p>
-      {/* Display other order details as needed */}
+    <div className="order-confirmation text-center">
+      <br /> <br />
+      <br /> <br />
+      <h2>Order Placed Successfully</h2> <br />
+      <p>Order ID: {orderDetails.orderId}</p><br />
+      <p>Total Amount: ${orderDetails.totalAmount}</p><br />
+      <br />
+      <br />
+      <br /><br /><br /><br />
+      <br />
     </div>
   );
 }

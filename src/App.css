@@ -12,6 +12,31 @@ header {
   padding: 1rem;
   text-align: center;
 }
+.bgcolor{
+  background-color: #222;
+}
+.xyz{
+  margin-top: 10px;
+}
+.navbar{
+  display: flex;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.nav1{
+  margin-left: 20px;
+  /* flex: auto; */
+}
+.nav2{
+  margin-right: 40px;
+  /* flex: auto; */
+}
+ul {
+  list-style: none; /* This removes the default list-style markers */
+}
+
 
 /* Style product list */
 .product-list {
@@ -25,6 +50,7 @@ header {
 .product {
   background-color: #444;
   padding: 1rem;
+  flex: auto;
   border-radius: 8px;
   text-align: center;
 }
@@ -58,7 +84,7 @@ header {
 
 /* Style cart */
 .cart {
-  background-color: #222;
+  background-color: #333;
   padding: 2rem;
   margin-top: 2rem;
   border-radius: 8px;

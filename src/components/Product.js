@@ -6,9 +6,9 @@ function Product({ product, addToCart }) {
   return (
     <div className="product">
       {/* <img src={image} alt={name} /> */}
-      <h3>{name}</h3>
-      <p>${price}</p>
-      <button onClick={() => addToCart(id)}>Add to Cart</button>
+      <div><h3>{name}</h3></div>
+      <div>${price}</div>
+      <div className='xyz'><button onClick={() => addToCart(id)}>Add to Cart</button></div>
     </div>
   );
 }

@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import Header from './components/Header';
 import OrderConfirmation from "./components/OrderConfirmation";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ProductList from './components/ProductList';
 import Cart from './components/Cart';
-
+import AboutUs from './components/AboutUs';
+import Footer from "./components/Footer";
 
 function App() {
   const [products] = useState([
@@ -39,6 +41,60 @@ function App() {
       price: 100,
       image: 'product5.jpg',
     },
+    {
+      id: 6,
+      name: 'Mens watch',
+      price: 100,
+      image: 'product5.jpg',
+    },
+    {
+      id: 7,
+      name: 'Neckband',
+      price: 999,
+      image: 'product5.jpg',
+    },
+    {
+      id: 8,
+      name: 'Purse',
+      price: 2999,
+      image: 'product.jpg',
+    },
+    {
+      id: 9,
+      name: 'Green Tea',
+      price: 200,
+      image: 'product.jpg',
+    },
+    {
+      id: 10,
+      name: 'Perfume',
+      price: 800,
+      image: 'product.jpg',
+    },
+    {
+      id: 11,
+      name: 'Steel Bottle',
+      price: 200,
+      image: 'product.jpg',
+    },
+    {
+      id: 12,
+      name: 'Sunglasses',
+      price: 199,
+      image: 'Sunglasses.jpg',
+    },
+    {
+      id: 13,
+      name: 'Phone case',
+      price: 99,
+      image: 'Phone case.jpg',
+    },
+    {
+      id: 14,
+      name: 'Refrigerator',
+      price: 10000,
+      image: 'Fridge.jpg',
+    },
   ]);
 
   const [cart, setCart] = useState([]);
@@ -63,8 +119,10 @@ function App() {
           <Route path="/" element={<ProductList products={products} addToCart={addToCart} />} />
           <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
           <Route path="/order-confirmation" element={<OrderConfirmation />} />
+          <Route path="/about-us" element={<AboutUs />} />
         </Routes>
       </Router>
+      <Footer/>
     </div>
   );
   
