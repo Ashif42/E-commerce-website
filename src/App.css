@@ -117,3 +117,16 @@ ul {
 .cart-item button:hover {
   background-color: #555;
 }
+
+/* styles.css */
+.go-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.Searchbarinput{
+  width: 600px;
+  /* height: 50px; */
+}

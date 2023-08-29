@@ -1,25 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Product from './Product';
-import product1Image from "./apple1.jpg";
-import product2Image from "./banana2.jpg";
-import product3Image from "./mobile3.jpg";
-import product4Image from "./pc4.jpg";
-import product5Image from "./ac5.jpg";
-import product6Image from "./watch6.jpg";
-import product7Image from "./neckband7.png";
-import product8Image from "./purse8.jpg";
-import product9Image from "./tea9.jpg";
-import product10Image from "./perfume10.jpg";
-import product11Image from "./bottle11.jpg";
-import product12Image from "./sunglass12.jpg";
-import product13Image from "./phonrcase13.jpg";
-import product14Image from "./Refrigerator14.jpg";
+import SearchBar from './SearchBar';
+import product1Image from "./Product's images/1-apple.jpg";
+import product2Image from "./Product's images/2-banana.jpg";
+import product3Image from "./Product's images/3-mobile.jpg";
+import product4Image from "./Product's images/4-pc.jpg";
+import product5Image from "./Product's images/5-ac.jpg";
+import product6Image from "./Product's images/6-watch.jpg";
+import product7Image from "./Product's images/7-neckband.png";
+import product8Image from "./Product's images/8-purse.jpg";
+import product9Image from "./Product's images/9-tea.jpg";
+import product10Image from "./Product's images/10-perfume.jpg";
+import product11Image from "./Product's images/11-bottle.jpg";
+import product12Image from "./Product's images/12-sunglass.jpg";
+import product13Image from "./Product's images/13-phonrcase.jpg";
+import product14Image from "./Product's images/14-Refrigerator.jpg";
 
 
 function ProductList({ products, addToCart }) {
-    return (
+  const [filteredProducts, setFilteredProducts] = useState(products);
+
+  const handleSearch = (searchQuery) => {
+    const filteredProducts = products.filter((product) =>
+      product.name.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+    setFilteredProducts(filteredProducts);
+  };
+    return (<>
+    <br />
+      <div className='text-center'><SearchBar onSearch={handleSearch} /></div>
       <div className="product-list">
-        {products.map(product => (
+        {filteredProducts.map(product => (
           <div key={product.id} className="product">
             {product.id === 1 && <img src={product1Image} alt={product.name} />}
             {product.id === 2 && <img src={product2Image} alt={product.name} />}
@@ -39,6 +50,7 @@ function ProductList({ products, addToCart }) {
           </div>
         ))}
       </div>
+      </>
     );
   }
   

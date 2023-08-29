@@ -46,12 +46,13 @@ function Cart({ cart, removeFromCart }) {
 
   const handlePlaceOrder = () => {
     const orderDetails = {
-        orderId: generateRandomOrderId(),
-        totalAmount: calculateTotalAmount(),
+      orderId: generateRandomOrderId(),
+      totalAmount: calculateTotalAmount(),
+      shippingInfo: shippingInfo,
+    };
+    Navigate('/order-confirmation', { state: { orderDetails } });
   };
-  Navigate('/order-confirmation', { state: { orderDetails } });
   
-}
   return (
     <div className="cart">
       <h2>Shopping Cart</h2>
@@ -73,7 +74,6 @@ function Cart({ cart, removeFromCart }) {
             Address:
             <input type="text" name="address" value={shippingInfo.address} onChange={handleInputChange} />
           </label>
-          {/* Add more input fields for shipping info */}
           <button type="button" onClick={handlePlaceOrder}>Place Order</button>
         </form><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </div>
