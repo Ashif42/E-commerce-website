@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <header>
+    <header className='headercomponent'>
       <h1 className='text-warning'>E-commerce Website</h1>
       <div className="navbar">
           <div className='nav1'><Link to="/"><h5>Home</h5></Link></div>

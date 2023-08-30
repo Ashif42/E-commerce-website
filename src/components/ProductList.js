@@ -27,7 +27,6 @@ function ProductList({ products, addToCart }) {
     setFilteredProducts(filteredProducts);
   };
     return (<>
-    <br />
       <div className='text-center'><SearchBar onSearch={handleSearch} /></div>
       <div className="product-list">
         {filteredProducts.map(product => (

@@ -6,11 +6,17 @@ body {
   color: #fff;
 }
 
+/* .quantity{
+  color: #222;
+} */
 /* Style header */
 header {
   background-color: #222;
   padding: 1rem;
   text-align: center;
+}
+.headercomponent{
+  height: 120px;
 }
 .bgcolor{
   background-color: #222;
@@ -128,5 +134,8 @@ ul {
 
 .Searchbarinput{
   width: 600px;
-  /* height: 50px; */
+}
+.searchbar{
+  background-color: #222;
+  height: 40px;
 }

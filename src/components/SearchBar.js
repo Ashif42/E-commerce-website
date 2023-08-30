@@ -9,7 +9,7 @@ function SearchBar({ onSearch }) {
   };
 
   return (
-    <div className="search-bar">
+    <div className="search-bar searchbar">
       <input
         className='Searchbarinput'
         type="text"
@@ -17,7 +17,7 @@ function SearchBar({ onSearch }) {
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
       />
-      <button onClick={handleSearch}><GiMagnifyingGlass size="19px" color="blue"/><b> SEARCH</b></button>
+      <button onClick={handleSearch}><GiMagnifyingGlass size="19px" color="blue"/><b> SEARCH</b></button><br />
     </div>
   );
 }
