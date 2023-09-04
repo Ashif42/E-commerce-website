@@ -17,7 +17,7 @@ function SearchBar({ onSearch }) {
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
       />
-      <button onClick={handleSearch}><GiMagnifyingGlass size="19px" color="blue"/><b> SEARCH</b></button><br />
+      <button onClick={handleSearch}><GiMagnifyingGlass size="19px" color="blue"/>SEARCH</button><br />
     </div>
   );
 }
