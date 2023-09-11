@@ -12,7 +12,7 @@ function Footer() {
         <div></div><br /><br />
         <h3>Thanks for visiting the website</h3><br />
       <a href="/about-us"><h5> About Us</h5></a><br />
-      <p>&copy; 2023 All rights reserved.</p>
+      <p>&copy; 2023 Azure E-commerese | All rights reserved.</p>
       <button className="btn btn-secondary go-to-top-btn" onClick={scrollToTop}>
         Go to Top
       </button>

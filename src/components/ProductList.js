@@ -27,6 +27,7 @@ function ProductList({ products, addToCart }) {
     setFilteredProducts(filteredProducts);
   };
     return (<>
+      <h5 className='animation'>Welcome to my website<br />the product Lists are below</h5>
       <div className='text-center'><SearchBar onSearch={handleSearch} /></div>
       <div className="product-list">
         {filteredProducts.map(product => (

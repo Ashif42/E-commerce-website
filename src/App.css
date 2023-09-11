@@ -9,37 +9,37 @@ body {
 .animation{
     position: absolute;
     left: -100%; /* Start from the left side of the screen */
-    top: 22%; /* Vertically centered */
-    animation: moveRight 8s linear infinite;
+    top: 22.3%; /* Vertically centered */
+    animation: moveRight 6s linear infinite;
     color: lime;
 }
 
 /* Define the animation */
 @keyframes moveRight {
     0% {
-        left: -100%; /* Start from the left side */
+        left: 0%; /* Start from the left side */
     }
     100% {
-        left: 65%; /* Move to the right side */
+        left: 81%; /* Move to the right side */
     }
 }
-.animation1{
+/*.animation1{
     position: absolute;
-    left: -100%; /* Start from the left side of the screen */
-    top: 26%; /* Vertically centered */
-    animation: moveRight1 8s linear infinite;
+    left: -100%;
+    top: 26%; 
+    animation: moveRight1 5s alternate-reverse infinite;
     color: blue;
 }
 
-/* Define the animation */
 @keyframes moveRight1 {
     0% {
-        left: -100%; /* Start from the left side */
+        left: 0%;
     }
     100% {
-        left: 80%; /* Move to the right side */
+        left: 90%; 
     }
 }
+*/
 
 
 /* Style header */

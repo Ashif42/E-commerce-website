@@ -11,22 +11,11 @@ import Footer from "./components/Footer";
 
 function App() {
   const [products] = useState([
-    {
-      id: 1,
-      name: 'Apple',
-      price: 10,
-      image: 'product1.jpg',
-    },
-    {
-      id: 2,
-      name: 'Banana',
-      price: 20,
-      image: 'product2.jpg',
-    },
+    
     {
       id: 3,
       name: 'Mobile',
-      price: 50,
+      price: 20000,
       image: 'product3.jpg',
     },
     {
@@ -43,7 +32,7 @@ function App() {
     },
     {
       id: 6,
-      name: 'Mens watch',
+      name: 'watch',
       price: 100,
       image: 'product5.jpg',
     },
@@ -60,6 +49,18 @@ function App() {
       image: 'product.jpg',
     },
     {
+      id: 1,
+      name: 'Apple',
+      price: 10,
+      image: 'product1.jpg',
+    },
+    {
+      id: 2,
+      name: 'Banana',
+      price: 20,
+      image: 'product2.jpg',
+    },
+    {
       id: 9,
       name: 'Green Tea',
       price: 200,
@@ -73,7 +74,7 @@ function App() {
     },
     {
       id: 11,
-      name: 'Steel Bottle',
+      name: 'Bottle',
       price: 200,
       image: 'product.jpg',
     },
